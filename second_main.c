@@ -8,7 +8,10 @@ int second_num;
 int main() {
   while (1) {
     printf("Starting values? ");
-    scanf("%d,%d", &first_num, &second_num);
+    if (scanf("%d,%d", &first_num, &second_num) != 2) {
+      printf("Invalid input\n");
+      return 0;
+    }
     if (first_num == 0 && second_num == 0) {
       break;
     }
