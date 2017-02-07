@@ -8,7 +8,6 @@ int fibcalc(int n) {
   else if (n == 1) return 1;
   else {
     for (int i = 1; i < n; i++) {
-      printf("<%d>", first);
       fib_num = (first * 2) + second;
       first = second;
       second = fib_num;
